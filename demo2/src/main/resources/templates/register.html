@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" th:action="@{/register}" th:object="${user}" method="post">
+    <p>id: <input type="text" th:field="*{id}" readonly="true"/></p>
+    <p>name: <input type="text" th:field="*{name}" /></p>
+    <p>school: <input type="text" th:field="*{school}" /></p>
+    <p><input type="submit" value="提交" /> </p>
+</form>
+<input type="button" name="Submit" value="回到首页" class="btn" onclick="location.href='/'" />
+</body>
+</html>
